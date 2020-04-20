@@ -1,0 +1,37 @@
+baseURL = "http://jamessjackson.com"
+languageCode = "en-us"
+title = "Notes from a Programmer"
+theme = "hugo-lamp"
+googleAnalytics = "UA-55384642-6"
+
+
+[params]
+  mainSections = ["posts"]
+  subtitle = "I'm currently Software Developer for Aurora Innovation in the San Francisco Bay Area, where I'm helping build self-driving cars. This is my blog, where I've put a bunch of reminders of things I want to remember."
+  description = "I'm currently Software Developer for Aurora Innovation in the San Francisco Bay Area, where I'm helping build self-driving cars. This is my blog, where I've put a bunch of reminders of things I want to remember."
+  paginate = 10
+  logo = "http://www.gravatar.com/avatar/3ba0414efae65f0b4e0f99719d5a02ee?s=150"
+
+  # Social networks
+  email = "superjax08@gmail.com"
+  github = "superjax"
+  twitter = "jsjacks0n"
+  linkedin = "superjax08"
+
+[markup.goldmark.renderer]
+    unsafe= true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[[menu.main]]
+  name = "Posts"
+  weight = 1
+  identifier = "posts"
+  url = "/posts/"
+[[menu.main]]
+  name = "Lie Algebra Tutorial"
+  weight = 2
+  identifier = "lie_algebra_tutorial"
+  url = "/lie_algebra_tutorial/"

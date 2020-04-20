@@ -1,0 +1,4 @@
+#!/bin/bash
+
+hugo
+scp -r public/* jamessja@jamessjackson.com:~/public_html/.
