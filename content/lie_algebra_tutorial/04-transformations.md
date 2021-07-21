@@ -297,8 +297,10 @@ z^{*} & =r-d\epsilon. & \text{dual}\\\\
 $$
 
 Now we are ready to talk about dual quaternions, $\mathbb{D}\S^{3}$
-and $\mathbb{D}\SU\left(2\right)$\footnote{The $\mathbb{D}$ here refers to the dual formulation.}.
+and $\mathbb{D}\SU\left(2\right)$. [^1]
 We can represent 3D transforms with the dual unit quaternion pair
+
+[^1]: The $\mathbb{D}$ here refers to the dual formulation.
 
 $$
 \qq=\q_{r}+\epsilon\q_{d},
@@ -307,7 +309,9 @@ $$
 where $\q_{r}$ is called the real part and $\q_{d}$ is the dual
 part. The real part contains the rotation, while the dual part is
 one-half the pure quaternion containing the translation half rotated,
-as in\footnote{This may seem like a weird parameterization, and some (like myself)
+as in[^2].
+
+[^2]: This may seem like a weird parameterization, and some (like myself)
 may question if there is a simpler way, rather than handling this
 half-rotated vector. It comes from using the simplest form of the
 underlying Lie Algebra, and finding the natural expression of that
@@ -315,7 +319,7 @@ group in dual quaternions. In my experience, trying to form a convenient
 group and mangling the underlying algebra to match, while certainly
 possible, results in losing a lot of the beauty of Lie Theory. It's
 better to just use the natural expression, starting at the algebra
-and working up.}
+and working up.
 
 $$
 \begin{align*}

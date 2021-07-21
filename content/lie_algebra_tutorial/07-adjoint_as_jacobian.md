@@ -56,9 +56,11 @@ Most people's first introduction to calculus typically focuses on
 computing derivatives. For completeness, we're going to start here
 and work our way to computing Jacobians of the Lie group action. The
 formula for computing the derivative of a scalar function $f$, is
-given as\footnote{Note, to be consistent with the vast majority of literature on this
+given as [^1]
+
+[^1]: Note, to be consistent with the vast majority of literature on this
 topic, I am using $\varepsilon$ to mean a small perturbation. This
-is a separate and distinct concept from $\epsilon,$ the dual number.}
+is a separate and distinct concept from $\epsilon,$ the dual number.
 
 $$
 \frac{\partial f}{\partial x}=\lim_{\varepsilon\to0}\frac{1}{\varepsilon}\left(f\left(x+\varepsilon\right)-f\left(x\right)\right).
@@ -95,7 +97,9 @@ What we want is a matrix that tells us how the output of $h$ behaves
 as we tweak the argument of $h$ along the *generators *of $\se\left(3\right).$
 To compute this, we use the fact that every member of the group can
 be described by the exponential of some linear combination of generators,
-as in\footnote{Assuming that $\x$ is in the bijective region of $\exp$. }
+as in [^2]
+
+[^2]: Assuming that $\x$ is in the bijective region of $\exp$.
 
 $$
 \begin{align*}
@@ -140,9 +144,11 @@ as the Jacobian of the group action by a member of the group.[^1]
 We can come at the Adjoint in another way: because the Adjoint is
 the Jacobian of the group action of a Lie group, we can use it to
 map vectors from the "output" of a group action to the "input",
-and vice-versa. In mathematical terms\footnote{for the rest of this section, I'm dropping the $\left(\cdot\right)^{\wedge}$
+and vice-versa. In mathematical terms[^3]
+
+[^3]: For the rest of this section, I'm dropping the $\left(\cdot\right)^{\wedge}$
 so we can focus on the coordinate frame notation. The mapping from
-the vector to algebra should be implied by context.}:
+the vector to algebra should be implied by context.:
 
 $$
 T\cdot\exp\left(\dd\right)=\exp\left(\Ad_{T}\cdot\dd\right)\cdot T.

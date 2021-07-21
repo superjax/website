@@ -29,7 +29,7 @@ that exists in the ideas of Lie Groups, and attempt to supply _just
 enough_ information to give you the vocabulary and intuition necessary
 to understand and implement most of the state-of-the art robotics
 literature. Pretty much everything in this document comes from the
-following papers: \cite{Barfoot2019,Drummond2014,Ethan2019,Sola2019,schwichtenberg_2015}.
+following papers: [Barfoot2019](http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17.pdf),[Drummond2014](http://twd20g.blogspot.com/p/notes-on-lie-groups.html),[Ethan2019](http://ethaneade.com/),[Sola2019](https://arxiv.org/abs/1812.01537),[Schwichtenberg2015](http://www.infis.ufu.br/~gerson/grupos/3%20-%20Great%20books/Physics%20from%20Symmetry.pdf).
 These are all excellent resources that can take your understanding
 to the next level, and I would recommend any and all of them if you're
 interested in being more rigorous in the theory.
@@ -142,8 +142,8 @@ may be difficult to visualize, we could also consider the opposite
 case: the angular velocity of the earth with respect to the rotating
 body, $\w_{E/b}$. This can be a fun mind bender, turning frames of
 reference around in your head. It turns out that even in this case,
-the __earth-centric__ representation is just the negative of the
-__body-centric__ representation.
+the earth-centric representation is just the negative of the
+body-centric representation.
 
 $$
 \w_{E/b}=-\w_{b/E}.
@@ -163,13 +163,15 @@ $$
 \r_{a/b}^{c},
 $$
 
-which in words means ``the position of point $a$ with respect to
-point $b$, expressed in frame $c$.'' Pretty much any vector quantity
+which in words means "the position of point $a$ with respect to
+point $b$, expressed in frame $c$." Pretty much any vector quantity
 we want to manipulate in robotics will have this concept of frame
 of reference, even if it is hard to visualize such as angular rate
-and acceleration.\footnote{The discussion in this documents is strictly limited to vector spaces
+and acceleration.[^1]
+
+[^1]: The discussion in this documents is strictly limited to vector spaces
 over real numbers. There are more abstract definitions of a vector
-space.}
+space.
 
 ## Rotating Vectors
 
@@ -196,7 +198,7 @@ rotations from $c\to b$ and $b\to a$? That's easy, just
 compose the rotations, and everything cancels out.
 
 $$
-\mathbf{r}_{a/b}^{a}=R_{\cancel{b}}^{a}R_{\cancel{c}}^{\cancel{b}}\r_{a/b}^{\cancel{c}}.
+\r_{a/b}^{a}=R_\cancel{b}^a R_{\cancel{c}}^{\cancel{b}}\r_{a/b}^{\cancel{c}}.
 $$
 
 Again, I'm deliberately skimming over most of the actual math. We'll
@@ -275,8 +277,10 @@ makes things easier.
 ## Skew-symmetric matrices
 
 Before going much further, I also need to introduce skew-symmetric
-matrices, and the the skew-symmetric matrix operator\footnote{There are a variety of symbols used to communicate this operation.
-$\v_{\times}$ and $\left(\v\right)^{\times}$ are also commonly used.} $\skew{\v}$. It is defined as
+matrices, and the the skew-symmetric matrix operator [^2] $\skew{\v}$. It is defined as
+
+[^2]: There are a variety of symbols used to communicate this operation.
+$\v_{\times}$ and $\left(\v\right)^{\times}$ are also commonly used.
 
 $$
 \skew{\v}=\left[\begin{array}{ccc}
@@ -305,7 +309,9 @@ $$
 $$
 
 The second is that rotation matrices can be moved in and out of the
-skew-symmetric operator with\footnote{This is also called the Adjoint representation of $R$}
+skew-symmetric operator with[^3]
+
+[^3]: This is also called the Adjoint representation of $R$
 
 $$
 \begin{equation}
