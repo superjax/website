@@ -87,7 +87,7 @@ the most straight forward. A homogeneous transform matrix has the
 following block structure
 
 $$
-T_{a}^{b}=\begin{bmatrix}R_{a}^{b} & \t_{b/a}^{a}\\\\
+T_{a}^{b}=\begin{bmatrix}R_{a}^{b} & \t_{b/a}^{b}\\\\
 0 & 1
 \end{bmatrix},
 $$

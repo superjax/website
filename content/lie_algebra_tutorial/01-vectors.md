@@ -14,7 +14,7 @@ Lie groups to describe rotations and rigid body transformations. This is a web p
 The
 topic of Lie groups is fundamental to much of modern physics, and
 therefore has a deep and rich history going back several decades.
-At a high level, Lie theory connects the \emph{symmetries} of nature
+At a high level, Lie theory connects the _symmetries_ of nature
 with differential equations. Rotations and rigid body transformations
 are two examples of such natural symmetries. The use of Lie group
 theory has recently become prevalent in state-of-the-art methods in
@@ -25,8 +25,8 @@ rigid transformations) to differential equations.
 Unfortunately, rigorous Lie theory also comes with a lot of vocabulary
 and subtlety that can discourage the uninitiated. Therefore, I'm are
 going to deliberately gloss over a lot of the nuance and subtlety
-that exists in the ideas of Lie Groups, and attempt to supply \emph{just
-enough} information to give you the vocabulary and intuition necessary
+that exists in the ideas of Lie Groups, and attempt to supply _just
+enough_ information to give you the vocabulary and intuition necessary
 to understand and implement most of the state-of-the art robotics
 literature. Pretty much everything in this document comes from the
 following papers: \cite{Barfoot2019,Drummond2014,Ethan2019,Sola2019,schwichtenberg_2015}.
@@ -44,8 +44,8 @@ visualize and understand what is going on. The extra notation has
 also allowed me to make distinctions between different fields of research
 that may have different conventions when it comes to transformations.
 
-As many of my fellow graduate students and I used to say, ``The two
-hardest problems in robotics are coordinate frames and naming things.''
+As many of my fellow graduate students and I used to say, "The two
+hardest problems in robotics are coordinate frames and naming things."
 While this won't help you much with the second problem, this will
 hopefully help dispel a lot of the confusion I encountered at first.
 
@@ -142,8 +142,8 @@ may be difficult to visualize, we could also consider the opposite
 case: the angular velocity of the earth with respect to the rotating
 body, $\w_{E/b}$. This can be a fun mind bender, turning frames of
 reference around in your head. It turns out that even in this case,
-the *earth-centric* representation is just the negative of the
-*body-centric* representation.
+the __earth-centric__ representation is just the negative of the
+__body-centric__ representation.
 
 $$
 \w_{E/b}=-\w_{b/E}.

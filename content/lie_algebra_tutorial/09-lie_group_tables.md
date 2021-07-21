@@ -93,45 +93,7 @@ $$
 
 # Useful Tables
 
-<figcaption class="center">Table 1: Dual Number Formulae</figcaption>
-<a name="tab:dual_trig_functions"></a>
-<div markdown="span" class="center rcorners3">
-$$
-\begin{align*}
-f\left(r+d\epsilon\right) & =f\left(r\right)+\epsilon d\left(f^{\prime}\left(r\right)\right)\\
-\cos\left(r+d\epsilon\right) & =\cos r-\epsilon d\sin r\\
-\sin\left(r+d\epsilon\right) & =\sin r+\epsilon d\cos r\\
-\arctan\left(r+d\epsilon\right) & =\arctan r+\epsilon\frac{d}{r^{2}+1}\\
-\left(r+d\epsilon\right)^{2} & =r^{2}+\epsilon2rd\\
-\sqrt{r+d\epsilon} & =\sqrt{r}+\epsilon\frac{d}{2\sqrt{r}}
-\end{align*}
-$$
-</div>
-<br />
-<br />
-
-<figcaption class="center">Table 2: Taylor series expansions</figcaption>
-<a name="tab:taylor_series"></a>
-<div markdown="span" class="center rcorners3">
-$$
-\begin{align*}
-\sin\left(\theta\right) & =\theta-\frac{1}{3!}\theta^{3}+\frac{1}{5!}\theta^{5}\cdots\\
-\cos\left(\theta\right) & =1-\frac{1}{2}\theta^{2}+\frac{1}{4!}\theta^{4}\cdots\\
-\cos\left(\frac{\theta}{2}\right) & =1-\frac{1}{8}\theta^{2}+\frac{1}{46080}\theta^{4}\cdots\\
-\frac{\sin\left(\theta\right)}{\theta} & =1-\frac{1}{3!}\theta^{2}+\frac{1}{5!}\theta^{4}\cdots\\
-\frac{\sin\left(\frac{\theta}{2}\right)}{\theta} & =\frac{1}{2}-\frac{1}{48}\theta^{2}+\frac{1}{3840}\theta^{4}+\cdots\\
-\frac{\theta}{\sin\left(\theta\right)} & =1+\frac{1}{3!}\theta^{2}+\frac{7}{360}\theta^{4}\cdots\\
-\frac{1-\cos\left(\theta\right)}{\theta^{2}} & =\frac{1}{2}-\frac{1}{24}\theta^{2}+\frac{1}{720}\theta^{4}\cdots\\
-\frac{\cos\theta-\frac{\sin\theta}{\theta}}{\theta^{2}} & =-\frac{1}{3}+\frac{1}{30}\theta^{2}-\frac{1}{840}\theta^{4}\cdots\\
-\frac{\frac{1}{2}\cos\frac{\theta}{2}-\frac{\sin\frac{\theta}{2}}{\theta}}{\theta^{2}} & =-\frac{1}{24}+\frac{1}{960}\theta^{2}-\frac{1}{107520}\theta^{4}\cdots\\
-\frac{\tan^{-1}\left(\frac{\theta}{y}\right)}{\theta} & =\frac{1}{y}-\frac{1}{3y^{3}}\theta^{2}+\frac{1}{5y^{5}}\theta^{4}
-\end{align*}
-$$
-</div>
-<br />
-<br />
-
-<figcaption class="center">Table 3: Group-Group Jacobians</figcaption>
+<figcaption class="center">Table 1: Group-Group Jacobians</figcaption>
 <a name="tab:lie_identities_group_operations"></a>
 <div class="rcorners3 center" markdown="span">
 {{<table "table jac_table">}}
@@ -151,7 +113,7 @@ $$
 <br />
 <br />
 
-<figcaption class="center">Table 4: Useful Jacobians for $\SO\left(3\right)$</figcaption>
+<figcaption class="center">Table 2: Useful Jacobians for $\SO\left(3\right)$</figcaption>
 <a name="tab:lie_identities_group_operations"></a>
 <div class="rcorners3 center" markdown="span">
 {{<table "table jac_table">}}
@@ -176,7 +138,7 @@ $$
 <br />
 <br />
 
-<figcaption class="center">Table 4: Useful Jacobians for $\SE\left(3\right)$</figcaption>
+<figcaption class="center">Table 3: Useful Jacobians for $\SE\left(3\right)$</figcaption>
 <a name="tab:lie_identities_group_operations"></a>
 <div class="rcorners3 center" markdown="span">
 {{<table "table jac_table">}}
@@ -233,7 +195,7 @@ $$
 <br />
 <br />
 
-<figcaption class="center">Table 4: Useful Jacobians for $\mathbb{D}\S^3$</figcaption>
+<figcaption class="center">Table 5: Useful Jacobians for $\mathbb{D}\S^3$</figcaption>
 <a name="tab:lie_identities_group_operations"></a>
 <div class="rcorners3 center" markdown="span">
 {{<table "table jac_table">}}
@@ -266,6 +228,44 @@ $$
 <br />
 <br />
 
+
+<figcaption class="center">Table 6: Dual Number Formulae</figcaption>
+<a name="tab:dual_trig_functions"></a>
+<div markdown="span" class="center rcorners3">
+$$
+\begin{align*}
+f\left(r+d\epsilon\right) & =f\left(r\right)+\epsilon d\left(f^{\prime}\left(r\right)\right)\\
+\cos\left(r+d\epsilon\right) & =\cos r-\epsilon d\sin r\\
+\sin\left(r+d\epsilon\right) & =\sin r+\epsilon d\cos r\\
+\arctan\left(r+d\epsilon\right) & =\arctan r+\epsilon\frac{d}{r^{2}+1}\\
+\left(r+d\epsilon\right)^{2} & =r^{2}+\epsilon2rd\\
+\sqrt{r+d\epsilon} & =\sqrt{r}+\epsilon\frac{d}{2\sqrt{r}}
+\end{align*}
+$$
+</div>
+<br />
+<br />
+
+<figcaption class="center">Table 7: Taylor series expansions</figcaption>
+<a name="tab:taylor_series"></a>
+<div markdown="span" class="center rcorners3">
+$$
+\begin{align*}
+\sin\left(\theta\right) & =\theta-\frac{1}{3!}\theta^{3}+\frac{1}{5!}\theta^{5}\cdots\\
+\cos\left(\theta\right) & =1-\frac{1}{2}\theta^{2}+\frac{1}{4!}\theta^{4}\cdots\\
+\cos\left(\frac{\theta}{2}\right) & =1-\frac{1}{8}\theta^{2}+\frac{1}{46080}\theta^{4}\cdots\\
+\frac{\sin\left(\theta\right)}{\theta} & =1-\frac{1}{3!}\theta^{2}+\frac{1}{5!}\theta^{4}\cdots\\
+\frac{\sin\left(\frac{\theta}{2}\right)}{\theta} & =\frac{1}{2}-\frac{1}{48}\theta^{2}+\frac{1}{3840}\theta^{4}+\cdots\\
+\frac{\theta}{\sin\left(\theta\right)} & =1+\frac{1}{3!}\theta^{2}+\frac{7}{360}\theta^{4}\cdots\\
+\frac{1-\cos\left(\theta\right)}{\theta^{2}} & =\frac{1}{2}-\frac{1}{24}\theta^{2}+\frac{1}{720}\theta^{4}\cdots\\
+\frac{\cos\theta-\frac{\sin\theta}{\theta}}{\theta^{2}} & =-\frac{1}{3}+\frac{1}{30}\theta^{2}-\frac{1}{840}\theta^{4}\cdots\\
+\frac{\frac{1}{2}\cos\frac{\theta}{2}-\frac{\sin\frac{\theta}{2}}{\theta}}{\theta^{2}} & =-\frac{1}{24}+\frac{1}{960}\theta^{2}-\frac{1}{107520}\theta^{4}\cdots\\
+\frac{\tan^{-1}\left(\frac{\theta}{y}\right)}{\theta} & =\frac{1}{y}-\frac{1}{3y^{3}}\theta^{2}+\frac{1}{5y^{5}}\theta^{4}
+\end{align*}
+$$
+</div>
+<br />
+<br />
 
 
 ## Left vs Right Jacobians

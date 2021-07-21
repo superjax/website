@@ -7,8 +7,8 @@ googleAnalytics = "UA-55384642-6"
 
 [params]
   mainSections = ["posts"]
-  subtitle = "I'm currently Software Developer for Aurora Innovation in the San Francisco Bay Area, where I'm helping build self-driving cars. This is my blog, where I've put a bunch of reminders of things I want to remember."
-  description = "I'm currently Software Developer for Aurora Innovation in the San Francisco Bay Area, where I'm helping build self-driving cars. This is my blog, where I've put a bunch of reminders of things I want to remember."
+  subtitle = "I'm currently a Software Developer for Aurora Innovation in the San Francisco Bay Area, where I'm helping build self-driving cars. This is my blog, where I've put a bunch of reminders of things I want to remember."
+  description = "I'm currently a Software Developer for Aurora Innovation in the San Francisco Bay Area, where I'm helping build self-driving cars. This is my blog, where I've put a bunch of reminders of things I want to remember."
   paginate = 10
   logo = "http://www.gravatar.com/avatar/3ba0414efae65f0b4e0f99719d5a02ee?s=150"
 
