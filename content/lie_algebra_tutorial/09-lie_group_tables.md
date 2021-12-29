@@ -99,7 +99,7 @@ $$
 {{<table "table jac_table">}}
 | Expression                                  | Left Jacobian                     | Right Jacobian                         |
 | ------------------------------------------- | --------------------------------- | -------------------------------------- |
-| $\frac{\partial}{\partial\x}\y\cdot\x$      | $\Ad\left(\y\right)^{-1}$         | $I$                                    |
+| $\frac{\partial}{\partial\x}\y\cdot\x$      | $\Ad\left(\y\right)$              | $I$                                    |
 | $\frac{\partial}{\partial\x}\x^{-1}\cdot\y$ | $-\Ad\left(\x\right)^{-1}$        | $-\Ad\left(\x^{-1}\cdot\y\right)^{-1}$ |
 | $\frac{\partial}{\partial\x}\y\cdot\x^{-1}$ | $-\Ad\left(\y\cdot\x^{-1}\right)$ | $-\Ad\left(\x\right)$                  |
 | $\frac{\partial}{\partial\x}\x\cdot\y$      | $I$                               | $\Ad\left(\y\right)^{-1}$              |

@@ -29,7 +29,7 @@ that exists in the ideas of Lie Groups, and attempt to supply _just
 enough_ information to give you the vocabulary and intuition necessary
 to understand and implement most of the state-of-the art robotics
 literature. Pretty much everything in this document comes from the
-following papers: [Barfoot2019](http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17.pdf),[Drummond2014](http://twd20g.blogspot.com/p/notes-on-lie-groups.html),[Ethan2019](http://ethaneade.com/),[Sola2019](https://arxiv.org/abs/1812.01537),[Schwichtenberg2015](http://www.infis.ufu.br/~gerson/grupos/3%20-%20Great%20books/Physics%20from%20Symmetry.pdf).
+following papers: [Barfoot2019](http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17.pdf), [Drummond2014](http://twd20g.blogspot.com/p/notes-on-lie-groups.html), [Ethan2019](http://ethaneade.com/), [Sola2019](https://arxiv.org/abs/1812.01537), and [Schwichtenberg2015](http://www.infis.ufu.br/~gerson/grupos/3%20-%20Great%20books/Physics%20from%20Symmetry.pdf).
 These are all excellent resources that can take your understanding
 to the next level, and I would recommend any and all of them if you're
 interested in being more rigorous in the theory.
@@ -47,7 +47,7 @@ that may have different conventions when it comes to transformations.
 As many of my fellow graduate students and I used to say, "The two
 hardest problems in robotics are coordinate frames and naming things."
 While this won't help you much with the second problem, this will
-hopefully help dispel a lot of the confusion I encountered at first.
+hopefully help dispel a lot of the confusion I encountered in the first.
 
 # Vectors
 
@@ -134,23 +134,30 @@ which means that for any arbitrary frame of reference
 </div>
 
 Although it may be sometimes hard to actually draw some quantities
-clearly (like the angular rate between two reference frames), in engineering,
-we typically define vectors as some quantity with respect to some
-other reference. For example, the angular velocity of a rotating body
-with respect to the earth might be written as $\w_{b/E}$. While it
+clearly (like the angular rate between two reference frames), in physics and
+engineering, we usually use vectors to represent some type of relationship
+between two reference frames. For example, the angular velocity of a rotating body
+with respect to the earth might be written as $\w_{b/E}$ or the position of
+some point $a$ with respect to another point $b$ $\r_{a/b}$.  While it
 may be difficult to visualize, we could also consider the opposite
 case: the angular velocity of the earth with respect to the rotating
-body, $\w_{E/b}$. This can be a fun mind bender, turning frames of
-reference around in your head. It turns out that even in this case,
-the earth-centric representation is just the negative of the
-body-centric representation.
+body, $\w_{E/b}$ and position of $b$ with respect to $a$, $\r_{b/a}$.
+Conveniently, flipping the direction is just applying a negative.
 
 $$
 \w_{E/b}=-\w_{b/E}.
+\r_{a/b}=-\r_{b/a}.
 $$
 
-The next piece of information that we need is the frame of reference
-it is described in (its basis). For example, in [Figure 1](#fig:notation),
+In the abstract, a vector can exist anywhere in space and isn't necessarily
+tied to a specific coordinate frame.  However, we typically want to
+represent vectors somewhere in a computer's memory or combine multiple vectors
+together with addition or subtraction.  To do this, we have to represent the
+actual values of the vector according to some coordinate frame.  This is also
+known as the vector's basis.
+
+There isn't usually anything inherently special about the coordinate frame
+we choose.  For example, in [Figure 1](#fig:notation),
 we could describe $\r$ in any coordinate frame we want. We could
 use frame $a$, $b$ or $c$, it doesn't really matter, so long as
 we always do all operations between vectors represented in the same
@@ -164,7 +171,7 @@ $$
 $$
 
 which in words means "the position of point $a$ with respect to
-point $b$, expressed in frame $c$." Pretty much any vector quantity
+point $b$, expressed in frame $c$." Any vector quantity
 we want to manipulate in robotics will have this concept of frame
 of reference, even if it is hard to visualize such as angular rate
 and acceleration.[^1]
@@ -176,7 +183,8 @@ space.
 ## Rotating Vectors
 
 I'm going to jump ahead a little bit and introduce the concept of
-a rotation as a change of basis. Let us say that we have some $\r$
+a rotation as a change of basis, (change in coordinate frame).
+Let us say that we have some $\r$
 expressed in the $c$ frame, but we want to express it in the $b$
 frame. How do we do that? Easy, we simply change the basis, as in
 
@@ -209,12 +217,13 @@ of working with this notation.
 Let's now take a minute to remember what defines a vector space. From
 Wikipedia:
 
-> A vector space is a collection of objects called vectors, which may be added together and multiplied (scaled) by numbers, called scalars.
+> A vector space is a collection of objects called vectors, which may be added together
+> and multiplied (scaled) by numbers, called scalars.
 
 
 All vector spaces abide by the rules shown in [Table 1](#tab:vector_rules}.
 If you've taken a course in linear algebra, these will not be new
-to you. However, for me, up to this point, I had never worked with
+to you. However, when I first learned these rules, I had never worked with
 objects that were *not *in a vector space, so the rules seemed
 obvious and redundant. We like vector spaces because computers are
 well-suited for solving linear algebra problems. There are high-performance

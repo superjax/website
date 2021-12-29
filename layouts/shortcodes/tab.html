@@ -1,0 +1,5 @@
+<input type="radio" name="tab{{ .Parent.Get 0 }}" id="tab{{ .Get 0}}">
+<label for="tab{{ .Get 0}}">{{.Get 1}}</label>
+<div class="tab{{ .Parent.Get 0 }}">
+{{ .Inner }}
+</div>
